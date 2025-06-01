@@ -1,0 +1,23 @@
+packagecom.example;
+importcom.google.gson.Gson;
+publicclassMain
+{
+    publicstaticvoidmain(Stringargs[])
+    {
+        Gsongson= newGson();
+        Stringjson= gson.toJson(new Person("john",30) );
+        System.out.println(json);
+    }
+}
+classPerson
+{
+    privateString name;
+    privateint age;
+    publicPerson(Stringname, intage)
+    {
+        this.name=name;
+        this.age=age;
+    }
+}
+
+
